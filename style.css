@@ -7,17 +7,203 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 72px;
-  padding: 0 100px;
-  background: #b0d86f;
+  padding: 0 180px;
+  background: #1f2937;
 }
 header .logo {
   font-size: 24px;
   font-weight: 700;
+  color: #f9faf8;
+  cursor: pointer;
+}
+
+header ul {
+  display: flex;
+  gap: 16px;
+}
+
+header ul li a {
+  font-size: 18px;
+  font-weight: 500;
   color: #fff;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+header ul li a:hover {
+  opacity: 1;
+}
+
+.hero-section {
+  display: flex;
+  padding: 209px 180px;
+  gap: 180px;
+  background: #1f2937;
+}
+
+.hero-section .heading-container {
+  flex-basis: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.hero-section .heading-container h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+  line-height: 48px;
+}
+.hero-section .heading-container p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.hero-section .heading-container button {
+  width: 110px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  background: #3882f6;
+  cursor: pointer;
+}
+
+.hero-section .image-container {
+  flex-basis: 450px;
+  flex-shrink: 0;
+  height: 250px;
+  /* width: 350px; */
+  background: #e5e7eb;
+  border-radius: 14px;
+}
+.hero-section .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 180px 128px;
+}
+
+.feature-section h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.feature-section .card-container {
+  display: flex;
+  gap: 32px;
+}
+.feature-section .card-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  gap: 14px;
+}
+.feature-section .card-container .card .square {
+  width: 100%;
+  height: 150px;
+  border: solid 3px #3882f6;
+  border-radius: 14px;
+}
+
+.testimonial-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 140px;
+  background: #e5e5e5;
+}
+
+.testimonial-section .content-container {
+  width: 790px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testimonial-section .content-container .quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1f2937;
+  text-align: justify;
+}
+
+.testimonial-section .content-container .author {
+  text-align: right;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 180px;
+}
+
+footer .container {
+  width: 800px;
+  padding: 34px 68px;
+  border-radius: 6px;
+  background: #3882f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+footer .container .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer .container .text-container span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+footer .container .text-container p {
+  font-size: 16px;
+  color: #e5e7eb;
+}
+
+button {
+  padding: 0; /* Removes default padding */
+  /* You can also customize other properties if needed */
+  margin: 0; /* Optional: remove default margin */
+}
+footer .container .cta {
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: solid 3px #f9faf87c;
+  border-radius: 8px;
+  padding: 0 26px;
+  height: 32px;
+  cursor: pointer;
 }

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0 100px;
+  background: #b0d86f;
+}
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
